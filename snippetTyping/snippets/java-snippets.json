@@ -1,0 +1,128 @@
+{
+  "snippets": [
+
+    {
+      "level": "beginner",
+      "code": "public class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello, World!\");\n  }\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "int a = 10, b = 20;\nSystem.out.println(a + b);"
+    },
+    {
+      "level": "beginner",
+      "code": "for (int i = 1; i <= 5; i++) {\n  System.out.println(i);\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "int num = 7;\nif (num % 2 == 0) {\n  System.out.println(\"Even\");\n} else {\n  System.out.println(\"Odd\");\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "String name = \"Coder\";\nSystem.out.println(\"Hi \" + name);"
+    },
+    {
+      "level": "beginner",
+      "code": "int[] arr = {1, 2, 3};\nSystem.out.println(arr[0]);"
+    },
+    {
+      "level": "beginner",
+      "code": "char ch = 'A';\nSystem.out.println((int) ch);"
+    },
+    {
+      "level": "beginner",
+      "code": "double pi = 3.1415;\nSystem.out.printf(\"%.2f\", pi);"
+    },
+    {
+      "level": "beginner",
+      "code": "boolean flag = true;\nif (flag) {\n  System.out.println(\"Yes\");\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "int x = 5;\nwhile (x > 0) {\n  System.out.println(x);\n  x--;\n}"
+    },
+
+    {
+      "level": "intermediate",
+      "code": "public static int square(int n) {\n  return n * n;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "public static void greet(String name) {\n  System.out.println(\"Hello \" + name);\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "int[] nums = {3, 1, 4};\nArrays.sort(nums);\nSystem.out.println(Arrays.toString(nums));"
+    },
+    {
+      "level": "intermediate",
+      "code": "Scanner sc = new Scanner(System.in);\nString name = sc.next();\nSystem.out.println(name);"
+    },
+    {
+      "level": "intermediate",
+      "code": "public static boolean isEven(int x) {\n  return x % 2 == 0;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "for (String s : new String[]{\"a\", \"b\"}) {\n  System.out.println(s);\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "String str = \"hello\";\nSystem.out.println(str.toUpperCase());"
+    },
+    {
+      "level": "intermediate",
+      "code": "List<String> list = new ArrayList<>();\nlist.add(\"Java\");\nSystem.out.println(list);"
+    },
+    {
+      "level": "intermediate",
+      "code": "public static int max(int a, int b) {\n  return Math.max(a, b);\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "int[][] matrix = {\n  {1, 2}, {3, 4}\n};\nSystem.out.println(matrix[1][1]);"
+    },
+
+    {
+      "level": "advanced",
+      "code": "public class Person {\n  String name;\n  Person(String name) {\n    this.name = name;\n  }\n  void sayHello() {\n    System.out.println(\"Hi \" + name);\n  }\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "public class Fibonacci {\n  public static int fib(int n) {\n    if (n <= 1) return n;\n    return fib(n - 1) + fib(n - 2);\n  }\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "try {\n  int res = 10 / 0;\n} catch (ArithmeticException e) {\n  System.out.println(\"Cannot divide by zero\");\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "public static boolean isPrime(int n) {\n  if (n <= 1) return false;\n  for (int i = 2; i < n; i++) {\n    if (n % i == 0) return false;\n  }\n  return true;\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "File f = new File(\"test.txt\");\ntry {\n  Scanner sc = new Scanner(f);\n  while (sc.hasNextLine()) {\n    System.out.println(sc.nextLine());\n  }\n  sc.close();\n} catch (Exception e) {}\n"
+    },
+    {
+      "level": "advanced",
+      "code": "HashMap<String, Integer> map = new HashMap<>();\nmap.put(\"A\", 1);\nmap.put(\"B\", 2);\nSystem.out.println(map.get(\"B\"));"
+    },
+    {
+      "level": "advanced",
+      "code": "public class Circle {\n  double radius;\n  Circle(double r) {\n    radius = r;\n  }\n  double area() {\n    return Math.PI * radius * radius;\n  }\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "class A {\n  void show() {\n    System.out.println(\"A\");\n  }\n}\nclass B extends A {\n  void show() {\n    System.out.println(\"B\");\n  }\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "int[] nums = {1, 2, 3};\nint sum = 0;\nfor (int n : nums) sum += n;\nSystem.out.println(\"Sum: \" + sum);"
+    },
+    {
+      "level": "advanced",
+      "code": "String s = \"racecar\";\nString rev = new StringBuilder(s).reverse().toString();\nSystem.out.println(s.equals(rev));"
+    }
+
+  ]
+}

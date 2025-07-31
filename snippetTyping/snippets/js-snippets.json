@@ -1,0 +1,126 @@
+{
+  "snippets": [
+    {
+      "level": "beginner",
+      "code": "let x = 10;\nconsole.log(x);"
+    },
+    {
+      "level": "beginner",
+      "code": "const name = \"John\";\nalert(name);"
+    },
+    {
+      "level": "beginner",
+      "code": "function greet() {\n  console.log(\"Hello!\");\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "let sum = 5 + 3;\nconsole.log(sum);"
+    },
+    {
+      "level": "beginner",
+      "code": "for (let i = 0; i < 5; i++) {\n  console.log(i);\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "let isOnline = true;\nconsole.log(typeof isOnline);"
+    },
+    {
+      "level": "beginner",
+      "code": "let fruits = [\"apple\", \"banana\"];\nconsole.log(fruits[0]);"
+    },
+    {
+      "level": "beginner",
+      "code": "let age = 18;\nif (age >= 18) {\n  console.log(\"Adult\");\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "const square = n => n * n;\nconsole.log(square(4));"
+    },
+    {
+      "level": "beginner",
+      "code": "document.write(\"Welcome to JS!\");"
+    },
+
+    {
+      "level": "intermediate",
+      "code": "function add(a, b) {\n  return a + b;\n}\n\nlet result = add(5, 7);\nconsole.log(result);"
+    },
+    {
+      "level": "intermediate",
+      "code": "let person = {\n  name: \"Alice\",\n  age: 25,\n  greet() {\n    return `Hi, I'm ${this.name}`;\n  }\n};\nconsole.log(person.greet());"
+    },
+    {
+      "level": "intermediate",
+      "code": "let colors = [\"red\", \"green\", \"blue\"];\ncolors.forEach(function(color) {\n  console.log(color);\n});"
+    },
+    {
+      "level": "intermediate",
+      "code": "let now = new Date();\nconsole.log(now.toLocaleString());"
+    },
+    {
+      "level": "intermediate",
+      "code": "function isEven(num) {\n  return num % 2 === 0;\n}\n\nconsole.log(isEven(10));"
+    },
+    {
+      "level": "intermediate",
+      "code": "const multiply = (a, b) => {\n  return a * b;\n};\nconsole.log(multiply(3, 4));"
+    },
+    {
+      "level": "intermediate",
+      "code": "let counter = 0;\nwhile (counter < 3) {\n  console.log(counter);\n  counter++;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "function countdown(n) {\n  for (let i = n; i > 0; i--) {\n    console.log(i);\n  }\n  console.log(\"Go!\");\n}\ncountdown(5);"
+    },
+    {
+      "level": "intermediate",
+      "code": "let temp = 35;\nlet status = temp > 30 ? \"Hot\" : \"Cool\";\nconsole.log(status);"
+    },
+    {
+      "level": "intermediate",
+      "code": "let grades = [88, 76, 92];\nlet avg = grades.reduce((a, b) => a + b) / grades.length;\nconsole.log(avg);"
+    },
+
+    {
+      "level": "advanced",
+      "code": "document.getElementById(\"btn\").addEventListener(\"click\", function() {\n  alert(\"Button clicked!\");\n});"
+    },
+    {
+      "level": "advanced",
+      "code": "function fetchData(url) {\n  fetch(url)\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.error(\"Error:\", error));\n}\n\nfetchData(\"https://api.example.com/data\");"
+    },
+    {
+      "level": "advanced",
+      "code": "async function getUsers() {\n  try {\n    let res = await fetch(\"https://jsonplaceholder.typicode.com/users\");\n    let users = await res.json();\n    console.log(users);\n  } catch (err) {\n    console.error(err);\n  }\n}\ngetUsers();"
+    },
+    {
+      "level": "advanced",
+      "code": "class Animal {\n  constructor(name) {\n    this.name = name;\n  }\n\n  speak() {\n    console.log(`${this.name} makes a noise.`);\n  }\n}\n\nlet dog = new Animal(\"Rex\");\ndog.speak();"
+    },
+    {
+      "level": "advanced",
+      "code": "window.addEventListener(\"keydown\", function(e) {\n  console.log(\"Key pressed:\", e.key);\n});"
+    },
+    {
+      "level": "advanced",
+      "code": "function debounce(fn, delay) {\n  let timeout;\n  return function() {\n    clearTimeout(timeout);\n    timeout = setTimeout(() => fn.apply(this, arguments), delay);\n  };\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "let user = {\n  name: \"Ravi\",\n  age: 30,\n  toJSON() {\n    return {\n      username: this.name,\n      years: this.age\n    };\n  }\n};\n\nconsole.log(JSON.stringify(user));"
+    },
+    {
+      "level": "advanced",
+      "code": "(function greet() {\n  console.log(\"IIFE says hello!\");\n})();"
+    },
+    {
+      "level": "advanced",
+      "code": "const state = {\n  count: 0,\n  increment() {\n    this.count++;\n    console.log(this.count);\n  }\n};\n\nstate.increment();"
+    },
+    {
+      "level": "advanced",
+      "code": "function throttle(func, limit) {\n  let lastFunc;\n  let lastRan;\n  return function() {\n    const context = this;\n    const args = arguments;\n    if (!lastRan) {\n      func.apply(context, args);\n      lastRan = Date.now();\n    } else {\n      clearTimeout(lastFunc);\n      lastFunc = setTimeout(function() {\n        if ((Date.now() - lastRan) >= limit) {\n          func.apply(context, args);\n          lastRan = Date.now();\n        }\n      }, limit - (Date.now() - lastRan));\n    }\n  };\n}"
+    }
+  ]
+}

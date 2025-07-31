@@ -1,0 +1,36 @@
+{
+  "snippets": [
+    { "level": "beginner", "code": "print(\"Hello, Swift!\")" },
+    { "level": "beginner", "code": "let x = 5\nprint(x)" },
+    { "level": "beginner", "code": "let name = \"Swift\"\nprint(\"Hi \\(name)\")" },
+    { "level": "beginner", "code": "if x > 3 { print(\"Big\") }" },
+    { "level": "beginner", "code": "for i in 1...3 { print(i) }" },
+    { "level": "beginner", "code": "let sum = x + 2\nprint(sum)" },
+    { "level": "beginner", "code": "let arr = [1,2,3]\nprint(arr[0])" },
+    { "level": "beginner", "code": "let flag = true\nprint(flag)" },
+    { "level": "beginner", "code": "let pi: Double = 3.14\nprint(pi)" },
+    { "level": "beginner", "code": "let f = { (a:Int,b:Int) in a + b }\nprint(f(2,3))" },
+
+    { "level": "intermediate", "code": "func add(a:Int,b:Int)->Int { return a+b }\nprint(add(a:3,b:4))" },
+    { "level": "intermediate", "code": "let names = [\"A\",\"B\",\"C\"]\nnames.forEach { print($0) }" },
+    { "level": "intermediate", "code": "var map = [\"a\":1, \"b\":2]\nprint(map[\"b\"]!)" },
+    { "level": "intermediate", "code": "struct Person { var name:String; var age:Int }\nlet p = Person(name:\"Bob\", age:30)" },
+    { "level": "intermediate", "code": "let arr2 = [1,2,3]; let even = arr2.filter { $0 % 2 == 0 }\nprint(even)" },
+    { "level": "intermediate", "code": "enum Direction { case up, down }\nlet d = Direction.up" },
+    { "level": "intermediate", "code": "let text = \"swift\"\nprint(text.uppercased())" },
+    { "level": "intermediate", "code": "let sq = arr2.map { $0 * $0 }\nprint(sq)" },
+    { "level": "intermediate", "code": "let opt: String? = nil\nprint(opt ?? \"none\")" },
+    { "level": "intermediate", "code": "for i in stride(from:1,to:5,by:2) { print(i) }" },
+
+    { "level": "advanced", "code": "class Calculator { func add(a:Int,b:Int)->Int { return a+b } }" },
+    { "level": "advanced", "code": "func fib(_ n:Int)->Int { return n<=1 ? n : fib(n-1)+fib(n-2) }" },
+    { "level": "advanced", "code": "extension Int { func squared()->Int { return self*self } }" },
+    { "level": "advanced", "code": "let nums = [1,2,3]\nlet sum = nums.reduce(0, +)\nprint(sum)" },
+    { "level": "advanced", "code": "protocol Animal { func speak() }\nstruct Dog: Animal { func speak() { print(\"Woof\") } }" },
+    { "level": "advanced", "code": "let json = \"{\\\"a\\\":1}\".data(using: .utf8)!\nlet obj = try! JSONSerialization.jsonObject(with: json)\nprint(obj)" },
+    { "level": "advanced", "code": "func highOrder(_ fn:(Int)->Int, x:Int)->Int { return fn(x) }" },
+    { "level": "advanced", "code": "struct Point<T> { var x:T; var y:T }\nlet p = Point(x:1,y:2)" },
+    { "level": "advanced", "code": "let file = try! String(contentsOfFile:\"file.txt\")\nprint(file)" },
+    { "level": "advanced", "code": "DispatchQueue.global().async { print(\"Async work\") }" }
+  ]
+}

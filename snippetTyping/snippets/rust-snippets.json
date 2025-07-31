@@ -1,0 +1,128 @@
+{
+  "snippets": [
+
+    {
+      "level": "beginner",
+      "code": "fn main() {\n    println!(\"Hello, Rust!\");\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "let x = 5;\nlet y = 10;\nprintln!(\"{}\", x + y);"
+    },
+    {
+      "level": "beginner",
+      "code": "let name = \"Alice\";\nprintln!(\"Hello, {}!\", name);"
+    },
+    {
+      "level": "beginner",
+      "code": "let nums = [1, 2, 3];\nprintln!(\"First: {}\", nums[0]);"
+    },
+    {
+      "level": "beginner",
+      "code": "let is_active = true;\nif is_active {\n    println!(\"Active\");\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "for i in 0..3 {\n    println!(\"{}\", i);\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "fn square(x: i32) -> i32 {\n    x * x\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "let tuple = (1, \"two\", 3.0);\nprintln!(\"{}\", tuple.1);"
+    },
+    {
+      "level": "beginner",
+      "code": "let mut count = 0;\ncount += 1;\nprintln!(\"{}\", count);"
+    },
+    {
+      "level": "beginner",
+      "code": "let chars = ['a', 'b', 'c'];\nfor c in chars {\n    println!(\"{}\", c);\n}"
+    },
+
+    {
+      "level": "intermediate",
+      "code": "fn factorial(n: u32) -> u32 {\n    let mut result = 1;\n    for i in 1..=n {\n        result *= i;\n    }\n    result\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "fn greet(name: &str) {\n    println!(\"Hello, {}!\", name);\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "let nums = vec![1, 2, 3];\nfor n in &nums {\n    println!(\"{}\", n);\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "let mut v = Vec::new();\nv.push(10);\nv.push(20);\nprintln!(\"{:?}\", v);"
+    },
+    {
+      "level": "intermediate",
+      "code": "fn is_even(n: i32) -> bool {\n    n % 2 == 0\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "enum Direction {\n    Up,\n    Down,\n    Left,\n    Right,\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "let point = (3, 4);\nlet (x, y) = point;\nprintln!(\"x: {}, y: {}\", x, y);"
+    },
+    {
+      "level": "intermediate",
+      "code": "fn sum(slice: &[i32]) -> i32 {\n    slice.iter().sum()\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "let mut s = String::from(\"Hello\");\ns.push_str(\" World\");\nprintln!(\"{}\", s);"
+    },
+    {
+      "level": "intermediate",
+      "code": "let result = match 5 {\n    1 => \"one\",\n    5 => \"five\",\n    _ => \"other\",\n};"
+    },
+
+    {
+      "level": "advanced",
+      "code": "struct User {\n    name: String,\n    age: u8,\n}\n\nfn print_user(user: &User) {\n    println!(\"{} is {}\", user.name, user.age);\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "trait Animal {\n    fn speak(&self);\n}\n\nstruct Dog;\nimpl Animal for Dog {\n    fn speak(&self) {\n        println!(\"Woof!\");\n    }\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "fn fibonacci(n: u32) -> u32 {\n    if n <= 1 {\n        return n;\n    }\n    fibonacci(n - 1) + fibonacci(n - 2)\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "use std::fs::File;\nuse std::io::Read;\n\nfn read_file() {\n    let mut f = File::open(\"text.txt\").unwrap();\n    let mut contents = String::new();\n    f.read_to_string(&mut contents).unwrap();\n    println!(\"{}\", contents);\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "fn map_example() {\n    let nums = vec![1, 2, 3];\n    let squares: Vec<_> = nums.iter().map(|x| x * x).collect();\n    println!(\"{:?}\", squares);\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "use std::collections::HashMap;\nlet mut scores = HashMap::new();\nscores.insert(\"Alice\", 10);\nprintln!(\"{:?}\", scores);"
+    },
+    {
+      "level": "advanced",
+      "code": "fn optional(value: Option<i32>) {\n    match value {\n        Some(v) => println!(\"Value: {}\", v),\n        None => println!(\"No value\"),\n    }\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "fn closures() {\n    let add = |a, b| a + b;\n    println!(\"{}\", add(3, 4));\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "fn generic<T: std::fmt::Display>(x: T) {\n    println!(\"{}\", x);\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "struct Point<T> {\n    x: T,\n    y: T,\n}\n\nlet p = Point { x: 1.0, y: 2.0 };"
+    }
+
+  ]
+}

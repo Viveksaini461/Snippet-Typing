@@ -1,0 +1,126 @@
+{
+  "snippets": [
+    {
+      "level": "beginner",
+      "code": "body {\n  background-color: #f2f2f2;\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "h1 {\n  color: blue;\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "p {\n  font-size: 16px;\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "a {\n  text-decoration: none;\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "button {\n  padding: 10px;\n}"
+    },
+    {
+      "level": "beginner",
+      "code": ".container {\n  width: 100%;\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "img {\n  max-width: 100%;\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "input[type=\"text\"] {\n  border: 1px solid #ccc;\n}"
+    },
+    {
+      "level": "beginner",
+      "code": ".box {\n  background: lightgray;\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "ul li {\n  list-style-type: square;\n}"
+    },
+
+    {
+      "level": "intermediate",
+      "code": ".card {\n  border: 1px solid #ddd;\n  border-radius: 8px;\n  padding: 20px;\n  box-shadow: 0 0 5px rgba(0,0,0,0.1);\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": ".nav a:hover {\n  color: white;\n  background-color: black;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "#banner {\n  background-image: url('banner.jpg');\n  background-size: cover;\n  height: 300px;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": ".btn {\n  background: #008CBA;\n  color: white;\n  padding: 10px 20px;\n  border: none;\n  cursor: pointer;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "form input:focus {\n  border-color: #66afe9;\n  outline: none;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": ".flex-box {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": ".grid-container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 10px;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": ".tooltip:hover::after {\n  content: attr(data-tip);\n  background: black;\n  color: white;\n  padding: 5px;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": ".hidden {\n  display: none;\n  visibility: hidden;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": ".rounded {\n  border-radius: 50%;\n  width: 100px;\n  height: 100px;\n}"
+    },
+
+    {
+      "level": "advanced",
+      "code": "@media screen and (max-width: 768px) {\n  .menu {\n    display: block;\n  }\n  .menu-item {\n    font-size: 14px;\n    padding: 8px;\n  }\n}"
+    },
+    {
+      "level": "advanced",
+      "code": ".loader {\n  border: 6px solid #f3f3f3;\n  border-top: 6px solid #3498db;\n  border-radius: 50%;\n  width: 40px;\n  height: 40px;\n  animation: spin 1s linear infinite;\n}\n\n@keyframes spin {\n  0% { transform: rotate(0deg); }\n  100% { transform: rotate(360deg); }\n}"
+    },
+    {
+      "level": "advanced",
+      "code": ".modal {\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background: white;\n  padding: 30px;\n  box-shadow: 0 0 10px rgba(0,0,0,0.3);\n}"
+    },
+    {
+      "level": "advanced",
+      "code": ".dropdown-content {\n  display: none;\n  position: absolute;\n  background-color: #f9f9f9;\n  min-width: 160px;\n  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);\n  z-index: 1;\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "body.dark-theme {\n  background-color: #121212;\n  color: #f0f0f0;\n}\n\n.dark-theme a {\n  color: #90caf9;\n}"
+    },
+    {
+      "level": "advanced",
+      "code": ".toast {\n  position: fixed;\n  bottom: 20px;\n  right: 20px;\n  background: #333;\n  color: white;\n  padding: 15px;\n  border-radius: 5px;\n}"
+    },
+    {
+      "level": "advanced",
+      "code": ".timeline::before {\n  content: '';\n  position: absolute;\n  left: 50%;\n  top: 0;\n  bottom: 0;\n  width: 2px;\n  background: #ccc;\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "input[type=\"range\"]::-webkit-slider-thumb {\n  appearance: none;\n  height: 20px;\n  width: 20px;\n  background: #4CAF50;\n  cursor: pointer;\n}"
+    },
+    {
+      "level": "advanced",
+      "code": ".glassy {\n  backdrop-filter: blur(10px);\n  background: rgba(255, 255, 255, 0.1);\n  border: 1px solid rgba(255, 255, 255, 0.2);\n}"
+    },
+    {
+      "level": "advanced",
+      "code": ":root {\n  --primary-color: #0d6efd;\n  --font-stack: 'Segoe UI', sans-serif;\n}\n\nbody {\n  font-family: var(--font-stack);\n  color: var(--primary-color);\n}"
+    }
+  ]
+}
