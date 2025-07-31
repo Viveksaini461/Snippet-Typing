@@ -1,0 +1,126 @@
+{
+  "snippets": [
+    {
+      "level": "beginner",
+      "code": "#include <stdio.h>\nint main() {\n  printf(\"Hello, World!\\n\");\n  return 0;\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "int a = 5, b = 10;\nprintf(\"%d\", a + b);"
+    },
+    {
+      "level": "beginner",
+      "code": "int x = 15;\nif (x > 10) {\n  printf(\"x is greater\\n\");\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "for (int i = 0; i < 3; i++) {\n  printf(\"%d\\n\", i);\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "int num = 8;\nprintf(\"%s\", (num % 2 == 0) ? \"Even\" : \"Odd\");"
+    },
+    {
+      "level": "beginner",
+      "code": "void greet() {\n  printf(\"Welcome!\\n\");\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "char name[] = \"Coder\";\nprintf(\"%s\", name);"
+    },
+    {
+      "level": "beginner",
+      "code": "int age;\nscanf(\"%d\", &age);\nprintf(\"Age: %d\", age);"
+    },
+    {
+      "level": "beginner",
+      "code": "float pi = 3.14;\nprintf(\"%.2f\", pi);"
+    },
+    {
+      "level": "beginner",
+      "code": "int flag = 1;\nif (flag) printf(\"True\\n\");"
+    },
+
+    {
+      "level": "intermediate",
+      "code": "void printSum(int a, int b) {\n  printf(\"Sum = %d\\n\", a + b);\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "int factorial(int n) {\n  if (n == 0) return 1;\n  return n * factorial(n - 1);\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "int arr[5] = {10, 20, 30, 40, 50};\nfor (int i = 0; i < 5; i++) {\n  printf(\"%d \", arr[i]);\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "#include <math.h>\ndouble sq = sqrt(49);\nprintf(\"%.2f\", sq);"
+    },
+    {
+      "level": "intermediate",
+      "code": "void swap(int *x, int *y) {\n  int temp = *x;\n  *x = *y;\n  *y = temp;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "#include <string.h>\nchar s1[] = \"Hello\", s2[] = \"World\";\nstrcat(s1, s2);\nprintf(\"%s\", s1);"
+    },
+    {
+      "level": "intermediate",
+      "code": "int isEven(int n) {\n  return n % 2 == 0;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "char name[20];\nprintf(\"Enter name: \");\nscanf(\"%s\", name);\nprintf(\"Name: %s\", name);"
+    },
+    {
+      "level": "intermediate",
+      "code": "int max(int a, int b) {\n  return (a > b) ? a : b;\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "#include <stdlib.h>\nint *p = (int*) malloc(sizeof(int));\n*p = 10;\nprintf(\"%d\", *p);"
+    },
+
+    {
+      "level": "advanced",
+      "code": "#include <stdio.h>\nvoid reverse(int arr[], int n) {\n  for (int i = n-1; i >= 0; i--) {\n    printf(\"%d \", arr[i]);\n  }\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "#include <stdio.h>\nint binarySearch(int arr[], int n, int target) {\n  int l = 0, r = n - 1;\n  while (l <= r) {\n    int m = (l + r) / 2;\n    if (arr[m] == target) return m;\n    else if (arr[m] < target) l = m + 1;\n    else r = m - 1;\n  }\n  return -1;\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct {\n  int id;\n  char name[20];\n} Student;\nStudent s = {1, \"John\"};\nprintf(\"%d %s\", s.id, s.name);"
+    },
+    {
+      "level": "advanced",
+      "code": "#include <stdio.h>\nFILE *f = fopen(\"file.txt\", \"w\");\nif (f) {\n  fprintf(f, \"Hello File\\n\");\n  fclose(f);\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "#include <stdio.h>\nint sumArray(int arr[], int size) {\n  int sum = 0;\n  for (int i = 0; i < size; i++) {\n    sum += arr[i];\n  }\n  return sum;\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "#include <string.h>\nchar str[50] = \"hello\";\nfor (int i = 0; str[i] != '\\0'; i++) {\n  str[i] = toupper(str[i]);\n}\nprintf(\"%s\", str);"
+    },
+    {
+      "level": "advanced",
+      "code": "#include <time.h>\ntime_t t;\ntime(&t);\nprintf(\"Current time: %s\", ctime(&t));"
+    },
+    {
+      "level": "advanced",
+      "code": "#include <stdio.h>\n#include <limits.h>\nint min = INT_MAX;\nint arr[] = {10, 2, 99};\nfor (int i = 0; i < 3; i++) {\n  if (arr[i] < min) min = arr[i];\n}\nprintf(\"Min: %d\", min);"
+    },
+    {
+      "level": "advanced",
+      "code": "#include <stdio.h>\nint fib(int n) {\n  if (n <= 1) return n;\n  return fib(n - 1) + fib(n - 2);\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "#include <stdio.h>\n#define SIZE 10\nint arr[SIZE];\nfor (int i = 0; i < SIZE; i++) {\n  arr[i] = i * 2;\n  printf(\"%d \", arr[i]);\n}"
+    }
+  ]
+}

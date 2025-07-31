@@ -1,0 +1,128 @@
+{
+  "snippets": [
+
+    {
+      "level": "beginner",
+      "code": "package main\nimport \"fmt\"\nfunc main() {\n  fmt.Println(\"Hello, Go!\")\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "var x int = 10\nfmt.Println(x)"
+    },
+    {
+      "level": "beginner",
+      "code": "name := \"Gopher\"\nfmt.Println(\"Hello,\", name)"
+    },
+    {
+      "level": "beginner",
+      "code": "for i := 1; i <= 5; i++ {\n  fmt.Println(i)\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "if x := 5; x > 3 {\n  fmt.Println(\"x is big\")\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "arr := [3]int{1, 2, 3}\nfmt.Println(arr[0])"
+    },
+    {
+      "level": "beginner",
+      "code": "nums := []int{1, 2, 3}\nfmt.Println(len(nums))"
+    },
+    {
+      "level": "beginner",
+      "code": "const Pi = 3.14\nfmt.Println(Pi)"
+    },
+    {
+      "level": "beginner",
+      "code": "flag := true\nif flag {\n  fmt.Println(\"True!\")\n}"
+    },
+    {
+      "level": "beginner",
+      "code": "a, b := 3, 4\nfmt.Println(a + b)"
+    },
+
+    {
+      "level": "intermediate",
+      "code": "func greet(name string) {\n  fmt.Println(\"Hello\", name)\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "func add(a int, b int) int {\n  return a + b\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "nums := []int{3, 1, 4}\nsort.Ints(nums)\nfmt.Println(nums)"
+    },
+    {
+      "level": "intermediate",
+      "code": "for _, val := range []string{\"a\", \"b\", \"c\"} {\n  fmt.Println(val)\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "m := map[string]int{\"one\": 1, \"two\": 2}\nfmt.Println(m[\"two\"])"
+    },
+    {
+      "level": "intermediate",
+      "code": "func isEven(n int) bool {\n  return n%2 == 0\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "defer fmt.Println(\"Goodbye\")\nfmt.Println(\"Hello\")"
+    },
+    {
+      "level": "intermediate",
+      "code": "type Person struct {\n  Name string\n  Age int\n}"
+    },
+    {
+      "level": "intermediate",
+      "code": "p := Person{\"Alex\", 30}\nfmt.Println(p.Name)"
+    },
+    {
+      "level": "intermediate",
+      "code": "import \"math\"\narea := math.Pi * 4 * 4\nfmt.Println(area)"
+    },
+
+    {
+      "level": "advanced",
+      "code": "func factorial(n int) int {\n  if n == 0 {\n    return 1\n  }\n  return n * factorial(n-1)\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "type Animal interface {\n  Speak() string\n}\ntype Dog struct{}\nfunc (d Dog) Speak() string {\n  return \"Woof\"\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "package main\nimport (\n  \"fmt\"\n  \"time\"\n)\nfunc main() {\n  go func() {\n    fmt.Println(\"From goroutine\")\n  }()\n  time.Sleep(time.Second)\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "ch := make(chan int)\ngo func() {\n  ch <- 42\n}()\nfmt.Println(<-ch)"
+    },
+    {
+      "level": "advanced",
+      "code": "file, err := os.Open(\"file.txt\")\nif err != nil {\n  log.Fatal(err)\n}\ndefer file.Close()"
+    },
+    {
+      "level": "advanced",
+      "code": "type Point struct {\n  X, Y int\n}\nfunc (p Point) Distance() float64 {\n  return math.Sqrt(float64(p.X*p.X + p.Y*p.Y))\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "type Counter struct {\n  mu sync.Mutex\n  val int\n}\nfunc (c *Counter) Inc() {\n  c.mu.Lock()\n  c.val++\n  c.mu.Unlock()\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "r := bufio.NewReader(os.Stdin)\ntext, _ := r.ReadString('\\n')\nfmt.Println(\"Input:\", text)"
+    },
+    {
+      "level": "advanced",
+      "code": "func sum(nums ...int) int {\n  total := 0\n  for _, n := range nums {\n    total += n\n  }\n  return total\n}"
+    },
+    {
+      "level": "advanced",
+      "code": "type Shape interface {\n  Area() float64\n}\ntype Circle struct {\n  R float64\n}\nfunc (c Circle) Area() float64 {\n  return math.Pi * c.R * c.R\n}"
+    }
+
+  ]
+}

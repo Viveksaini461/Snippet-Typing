@@ -1,0 +1,126 @@
+{
+  "snippets": [
+    {
+      "level": "beginner",
+      "code": "<h1>Hello, Developer!</h1>\n<p>Welcome to the web.</p>"
+    },
+    {
+      "level": "beginner",
+      "code": "<a href=\"https://google.com\">Go to Google</a>"
+    },
+    {
+      "level": "beginner",
+      "code": "<button>Click Me</button>"
+    },
+    {
+      "level": "beginner",
+      "code": "<img src=\"logo.png\" alt=\"Site Logo\">"
+    },
+    {
+      "level": "beginner",
+      "code": "<ul>\n  <li>Home</li>\n  <li>About</li>\n</ul>"
+    },
+    {
+      "level": "beginner",
+      "code": "<input type=\"text\" placeholder=\"Your name\">"
+    },
+    {
+      "level": "beginner",
+      "code": "<p>This is a paragraph tag.</p>"
+    },
+    {
+      "level": "beginner",
+      "code": "<strong>Important!</strong>"
+    },
+    {
+      "level": "beginner",
+      "code": "<em>Italic text example</em>"
+    },
+    {
+      "level": "beginner",
+      "code": "<div>\n  <p>Hello HTML</p>\n</div>"
+    },
+
+    {
+      "level": "intermediate",
+      "code": "<form>\n  <label>Email:</label>\n  <input type=\"email\">\n  <button type=\"submit\">Submit</button>\n</form>"
+    },
+    {
+      "level": "intermediate",
+      "code": "<table>\n  <tr><th>Name</th><th>Age</th></tr>\n  <tr><td>Alice</td><td>22</td></tr>\n</table>"
+    },
+    {
+      "level": "intermediate",
+      "code": "<nav>\n  <a href=\"/\">Home</a>\n  <a href=\"/blog\">Blog</a>\n  <a href=\"/contact\">Contact</a>\n</nav>"
+    },
+    {
+      "level": "intermediate",
+      "code": "<section>\n  <h2>Projects</h2>\n  <p>Explore the latest work below.</p>\n</section>"
+    },
+    {
+      "level": "intermediate",
+      "code": "<header>\n  <h1>My Portfolio</h1>\n</header>\n<main>\n  <p>Some content here...</p>\n</main>"
+    },
+    {
+      "level": "intermediate",
+      "code": "<textarea rows=\"4\" cols=\"40\">Type your message here...</textarea>"
+    },
+    {
+      "level": "intermediate",
+      "code": "<audio controls>\n  <source src=\"music.mp3\" type=\"audio/mpeg\">\n</audio>"
+    },
+    {
+      "level": "intermediate",
+      "code": "<video width=\"320\" height=\"240\" controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n</video>"
+    },
+    {
+      "level": "intermediate",
+      "code": "<link rel=\"stylesheet\" href=\"styles.css\">"
+    },
+    {
+      "level": "intermediate",
+      "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+    },
+
+    {
+      "level": "advanced",
+      "code": "<form onsubmit=\"return validateForm()\">\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" required>\n  <label for=\"pwd\">Password:</label>\n  <input type=\"password\" id=\"pwd\" required>\n  <button type=\"submit\">Login</button>\n</form>"
+    },
+    {
+      "level": "advanced",
+      "code": "<iframe src=\"https://example.com\" width=\"600\" height=\"400\" title=\"Embedded Page\">\n  <p>Your browser does not support iframes.</p>\n</iframe>"
+    },
+    {
+      "level": "advanced",
+      "code": "<article>\n  <header>\n    <h2>Understanding Flexbox</h2>\n    <p>By John Doe | July 2025</p>\n  </header>\n  <p>Flexbox helps you align items easily...</p>\n</article>"
+    },
+    {
+      "level": "advanced",
+      "code": "<details>\n  <summary>More Info</summary>\n  <p>This content is hidden by default and expands on click.</p>\n</details>"
+    },
+    {
+      "level": "advanced",
+      "code": "<figure>\n  <img src=\"design.jpg\" alt=\"Design preview\">\n  <figcaption>Homepage layout - v2</figcaption>\n</figure>"
+    },
+    {
+      "level": "advanced",
+      "code": "<div role=\"alert\" aria-live=\"assertive\">\n  Form submission failed. Please try again.\n</div>"
+    },
+    {
+      "level": "advanced",
+      "code": "<canvas id=\"chart\" width=\"400\" height=\"200\">\n  Your browser does not support the canvas element.\n</canvas>"
+    },
+    {
+      "level": "advanced",
+      "code": "<object data=\"sample.pdf\" type=\"application/pdf\" width=\"600\" height=\"400\">\n  <p>PDF preview not supported. <a href=\"sample.pdf\">Download here</a>.</p>\n</object>"
+    },
+    {
+      "level": "advanced",
+      "code": "<div itemscope itemtype=\"http://schema.org/Organization\">\n  <span itemprop=\"name\">Tech Co.</span>\n  <span itemprop=\"url\">https://techco.com</span>\n</div>"
+    },
+    {
+      "level": "advanced",
+      "code": "<fieldset>\n  <legend>Choose Plan</legend>\n  <label><input type=\"radio\" name=\"plan\" value=\"basic\"> Basic</label>\n  <label><input type=\"radio\" name=\"plan\" value=\"pro\"> Pro</label>\n</fieldset>"
+    }
+  ]
+}

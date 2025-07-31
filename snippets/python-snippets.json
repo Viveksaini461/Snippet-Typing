@@ -1,0 +1,128 @@
+{
+  "snippets": [
+
+    {
+      "level": "beginner",
+      "code": "print(\"Hello, Python!\")"
+    },
+    {
+      "level": "beginner",
+      "code": "x = 5\ny = 3\nprint(x + y)"
+    },
+    {
+      "level": "beginner",
+      "code": "name = \"Alice\"\nprint(\"Hi, \" + name)"
+    },
+    {
+      "level": "beginner",
+      "code": "for i in range(5):\n    print(i)"
+    },
+    {
+      "level": "beginner",
+      "code": "if x > 0:\n    print(\"Positive\")"
+    },
+    {
+      "level": "beginner",
+      "code": "colors = [\"red\", \"blue\", \"green\"]\nprint(colors[1])"
+    },
+    {
+      "level": "beginner",
+      "code": "def greet():\n    print(\"Welcome!\")\ngreet()"
+    },
+    {
+      "level": "beginner",
+      "code": "is_raining = False\nprint(not is_raining)"
+    },
+    {
+      "level": "beginner",
+      "code": "for char in \"hello\":\n    print(char)"
+    },
+    {
+      "level": "beginner",
+      "code": "nums = [1, 2, 3]\nnums.append(4)\nprint(nums)"
+    },
+
+    {
+      "level": "intermediate",
+      "code": "def add(a, b):\n    return a + b\nprint(add(3, 4))"
+    },
+    {
+      "level": "intermediate",
+      "code": "def factorial(n):\n    result = 1\n    for i in range(2, n+1):\n        result *= i\n    return result"
+    },
+    {
+      "level": "intermediate",
+      "code": "person = {\"name\": \"Bob\", \"age\": 25}\nprint(person[\"name\"])"
+    },
+    {
+      "level": "intermediate",
+      "code": "def is_even(n):\n    return n % 2 == 0\nprint(is_even(4))"
+    },
+    {
+      "level": "intermediate",
+      "code": "fruits = [\"apple\", \"banana\", \"cherry\"]\nfor fruit in fruits:\n    print(fruit.upper())"
+    },
+    {
+      "level": "intermediate",
+      "code": "import math\nprint(math.sqrt(16))"
+    },
+    {
+      "level": "intermediate",
+      "code": "def greet(name=\"Guest\"):\n    print(\"Hello, \" + name)\ngreet()"
+    },
+    {
+      "level": "intermediate",
+      "code": "s = \"python\"\nreversed_s = s[::-1]\nprint(reversed_s)"
+    },
+    {
+      "level": "intermediate",
+      "code": "nums = [1, 2, 3, 4]\nsquared = [n**2 for n in nums]\nprint(squared)"
+    },
+    {
+      "level": "intermediate",
+      "code": "try:\n    print(10 / 0)\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")"
+    },
+
+    {
+      "level": "advanced",
+      "code": "def fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        print(a)\n        a, b = b, a + b"
+    },
+    {
+      "level": "advanced",
+      "code": "class Animal:\n    def speak(self):\n        print(\"I am an animal\")\nclass Dog(Animal):\n    def speak(self):\n        print(\"Woof!\")"
+    },
+    {
+      "level": "advanced",
+      "code": "with open(\"file.txt\", \"r\") as f:\n    for line in f:\n        print(line.strip())"
+    },
+    {
+      "level": "advanced",
+      "code": "from datetime import datetime\nnow = datetime.now()\nprint(now.strftime(\"%Y-%m-%d %H:%M:%S\"))"
+    },
+    {
+      "level": "advanced",
+      "code": "def decorator(func):\n    def wrapper():\n        print(\"Before\")\n        func()\n        print(\"After\")\n    return wrapper"
+    },
+    {
+      "level": "advanced",
+      "code": "import threading\n\ndef worker():\n    print(\"Worker thread\")\n\nthread = threading.Thread(target=worker)\nthread.start()"
+    },
+    {
+      "level": "advanced",
+      "code": "nums = [1, 2, 3, 4, 5]\nresult = list(filter(lambda x: x % 2 == 0, nums))\nprint(result)"
+    },
+    {
+      "level": "advanced",
+      "code": "import json\ndata = '{\"name\": \"Alice\", \"age\": 30}'\nobj = json.loads(data)\nprint(obj[\"name\"])"
+    },
+    {
+      "level": "advanced",
+      "code": "class Counter:\n    def __init__(self):\n        self.count = 0\n    def increment(self):\n        self.count += 1"
+    },
+    {
+      "level": "advanced",
+      "code": "from collections import Counter\ntext = \"hello world\"\nc = Counter(text)\nprint(c.most_common(2))"
+    }
+
+  ]
+}

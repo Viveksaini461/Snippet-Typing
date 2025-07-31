@@ -1,0 +1,36 @@
+{
+  "snippets": [
+    { "level": "beginner", "code": "fun main() {\n  println(\"Hello, Kotlin!\")\n}" },
+    { "level": "beginner", "code": "var x = 10\nprintln(x)" },
+    { "level": "beginner", "code": "val name = \"Bob\"\nprintln(\"Hi $name\")" },
+    { "level": "beginner", "code": "if (x > 5) println(\"Big\")" },
+    { "level": "beginner", "code": "for (i in 1..3) println(i)" },
+    { "level": "beginner", "code": "val sum = x + 5\nprintln(sum)" },
+    { "level": "beginner", "code": "val arr = listOf(1,2,3)\nprintln(arr[0])" },
+    { "level": "beginner", "code": "val flag = true\nprintln(flag)" },
+    { "level": "beginner", "code": "val pi = 3.14\nprintln(pi)" },
+    { "level": "beginner", "code": "val x: Double = 5.0\nprintln(x)" },
+
+    { "level": "intermediate", "code": "fun add(a:Int,b:Int):Int = a + b\nprintln(add(3,4))" },
+    { "level": "intermediate", "code": "val person = mapOf(\"name\" to \"Jane\")\nprintln(person[\"name\"])" },
+    { "level": "intermediate", "code": "fun greet(name:String) {\n  println(\"Hello $name\")\n}" },
+    { "level": "intermediate", "code": "val nums = listOf(1,2,3)\nnums.forEach { println(it) }" },
+    { "level": "intermediate", "code": "val even = nums.filter { it % 2 == 0 }\nprintln(even)" },
+    { "level": "intermediate", "code": "data class Person(val name:String, val age:Int)" },
+    { "level": "intermediate", "code": "val max = if (x>y) x else y\nprintln(max)" },
+    { "level": "intermediate", "code": "val sq = nums.map { it * it }\nprintln(sq)" },
+    { "level": "intermediate", "code": "val text = \"kotlin\"\nprintln(text.capitalize())" },
+    { "level": "intermediate", "code": "val range = (1..5)\nprintln(range.last)" },
+
+    { "level": "advanced", "code": "class Calculator {\n  fun add(a:Int,b:Int) = a + b\n}" },
+    { "level": "advanced", "code": "fun fib(n:Int):Int = if(n<=1) n else fib(n-1) + fib(n-2)" },
+    { "level": "advanced", "code": "fun readLineFromInput() = readLine()?.let { println(it) }" },
+    { "level": "advanced", "code": "fun max(list:List<Int>) = list.maxOrNull()" },
+    { "level": "advanced", "code": "val user = Person(\"Jane\", 30)\nprintln(user)" },
+    { "level": "advanced", "code": "fun <T> identity(x:T):T = x\nprintln(identity(5))" },
+    { "level": "advanced", "code": "val map = mapOf(\"a\" to 1, \"b\" to 2)\nprintln(map.keys)" },
+    { "level": "advanced", "code": "val result = try { x/0 } catch (e:Exception) { null }" },
+    { "level": "advanced", "code": "import kotlin.math.PI\nprintln(PI * r * r)" },
+    { "level": "advanced", "code": "val list = listOf(1,2,3)\nprintln(list.joinToString(\",\"))" }
+  ]
+}
